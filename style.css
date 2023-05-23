@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header{
+    height: 60px;
+}
+
+
+.navbar{
+    height: 100%;
+    width: 100%;
+    padding: 14px 20px;
+}
+
+.navbar ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar ul li{
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.navbar .link{
+    color: black;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.circle-shadow{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle-shadow:hover{
+    background-color: #EBECEC;
+}
+
+.user-icon{
+    font-size: 17px;
+    background-color: #0288D1;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.menu-icon{
+    width: 25px; 
+    height:25px;
+}
+
+/* Content */
+.content-section{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 170px;
+}
+
+.logo-img{
+    margin-bottom: 25px;
+}
+
+.search-bar{
+    height: 47px;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    width: 575px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px; 
+}
+
+.search-bar:hover{
+    box-shadow: 0px 0px 4px 0px #B5B5B5;
+}
+
+.search-bar .search{
+    font-size: 15px;
+    color: darkgray;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.search-bar .keyboard{
+    font-size: 15px;
+    color: #7B7B7B;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.search-bar .microphone,
+.search-bar .camera{
+    font-size: large;
+    color: #4285F4;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.search-bar input{
+    flex-grow: 1;
+    border:none;
+    height: 30px;
+    font-size: 16px;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.search-btns{
+    margin-top: 30px;
+}
+
+.search-btns button{
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+    background-color: #F8F9FA;
+    cursor: pointer;
+}
+
+.search-btns button:hover{
+    border: 1px solid lightgray;
+}
+
+/* Footer */
+footer{
+    background-color: #F2F2F2;
+    height: 100px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.upper-footer{
+    height: 50%;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.upper-footer p {
+    color: gray;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.lower-footer{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-footer ul li a{
+    font-size: 14px;
+    color: gray;
+}
+
+.lower-footer ul li a:hover{
+    text-decoration: underline;
+}
+
+.lower-footer ul li i{
+    color: green;
+}
+
+.lower-left-footer{
+    display: flex;
+}
+
+.lower-left-footer li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.lower-middle-footer li{
+    margin-right: 165px;
+}
+
+.lower-right-footer{
+    display: flex;
+}
+
+.lower-right-footer li{
+    margin-left: 30px;
+}
+
+.lower-right-footer li:nth-child(3){
+    margin-right: 15px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px){
+    .search-bar{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    /* Search Bar */
+    .search-bar{
+        width: 50%;
+    }
+
+    /* Footer */
+    footer {
+        height: 150px;
+    }
+
+    .upper-footer{
+        height: 50px;
+    }
+
+    .lower-middle-footer li{
+        margin-top: 5px;
+        margin-right: 0px;
+    }
+
+    .lower-footer {
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .lower-right-footer li{
+        margin-top: 5px;
+    }
+}
